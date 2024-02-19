@@ -7,7 +7,8 @@
 |
 */
 
+use App\Controllers\GreetingController;
 use App\Controllers\WelcomeController;
 use Phenomine\Support\Route;
 
-Route::get('/', [WelcomeController::class, 'index'])->name('index');
+Route::get('/', [GreetingController::class, 'hello'])->name('index');
